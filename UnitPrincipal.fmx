@@ -1,0 +1,205 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 493
+  ClientWidth = 221
+  Fill.Color = xFFE5E0DD
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lay: TLayout
+    Align = Contents
+    Size.Width = 221.000000000000000000
+    Size.Height = 493.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object rect_bottom: TRectangle
+      Align = Bottom
+      Corners = [TopLeft, TopRight]
+      Fill.Color = claWhite
+      Position.Y = 443.000000000000000000
+      Size.Width = 221.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object lay_home: TLayout
+        Align = Left
+        TabOrder = 0
+        object img_home: TImage
+          MultiResBitmap.Height = 64
+          MultiResBitmap.Width = 64
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 32
+              Height = 32
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                01C3494441545847ED96CF6DC23014C69F93706F37A01B74047A22DC18810E00
+                2A13344C80C402E5584E552F459C428FBD750318A13D5789FBF91F4D8203C480
+                28123FE961C7CFC9F7C5B65EA00BE74E5DC749A8130B16328E6F2278C04F5644
+                8BD7B88AA39AF0DB528482273D501037E166C2D3ED06F895EE0884784CC49410
+                A701F17420FB624CE60EBE125E47BF659C7B73AA457A02F0A3D5F8E1B76365E0
+                2FB4F868347A1421A7399AD8610B0A8865A79F4808336291086522895CB6C3D7
+                6D1978908FC3C7D4392888CB31807EA3D56AD174FA863CC3256BC87B98D7264A
+                5F31E54BCD5C679381F503671137B89A28335049DCE062C266C049DC50D5C4BA
+                0116BCE0E756F62B8A1B4A4D907F0313CF7A9AC4B202DE356E085DC50D761334
+                8181B99AA160BAB5E22A9E85138F7ABD1E4CD8293500F10EC44DFDDF0B98B887
+                89B1BECC515A8838E7B9228287CCB381A1D561C2F5E7C67CE1595902DD6E6389
+                37B8D37D09562816FB2CFA2C61FD6EBF9BDB5BE417C8673F6456AA97E203733E
+                0686C361231B18DABABCBBB0AB817AE0077136B0BFAA58EDC9E50C9CDC40E9FF
+                8166B3B9449DFC465179DF16094FE6B3D92CF7950BC39021F721F2699A8E8BF9
+                0BFF04A25F45E6FE3E048789620000000049454E44AE426082}
+              FileName = 
+                'C:\Users\User\Desktop\iago\Projetos Delphi\AnimationMenuUi\src\i' +
+                'mages\icon_home_b.png'
+            end>
+          Align = Client
+          Margins.Top = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = img_homeClick
+        end
+      end
+      object lay_user: TLayout
+        Align = Right
+        Position.X = 171.000000000000000000
+        TabOrder = 1
+        object img_user: TImage
+          Tag = 2
+          MultiResBitmap.Height = 64
+          MultiResBitmap.Width = 64
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 32
+              Height = 32
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                020F494441545847C5963D56C3300C80A5247DB0513646B801231BDC807202CA
+                0148E909A02708CD630736461899E00670037A84CED05448AE9A169AC46E7EE0
+                7BCF959CEA45B2ACC886F5F18F005B1160F0C192662378E371CB7FEECE6C9AA1
+                3D733C779A3B22B5AF19B3CA4C8719836D2560077C95C598556147670EE00EA0
+                BF09307DD60795D85D5DA1E3907AB1E0A9CC07834BD54AE059B3660F00685F95
+                F5413A562D1754998F496505E8ABD08743069AC5650B46AA9480DE55C9C51E00
+                D1936AEB43600DC001D37AB33F33DB800D6B6B766844B205B80D8807FAC00D82
+                21C0E783CE2AC3E7C0DAADB809FCEB6C874B035AD7005B4EE74049645F833B0E
+                669111E0A3D938B6B7DEDF581B5114456DDFF77BAC76922439EBF7FB8595CDF6
+                476C2FEDFB95EDEFD9BEF0332E0C208EE30E02CA45234D2901BDB2B8E797BFCF
+                8361A752EDE2F894ED97B33062FB4118869CB16C720360E711BFEC42A795E020
+                AE3888814E7F9019C07038BCF5D0EBEAB41E08EECE7BE7673A4B59E984B2F2DA
+                9D0B08DD9BF866E5BAF62303ECBCAB7BDE1894D049D80F1F75BA08400A29F083
+                17561BBDD932E34932D9E3021ECB24DD02A960164D3B17DA9EE7A5C59D06C0A9
+                AF7FDF73E01AEB497F31BAFCC8F7CEE22F563FA71D4060AE7A260024B4DEDDEA
+                66EA4DCD85D50440487FB97A03221E8A9C6500B0FCCDB724ECD32C7A5E844D1E
+                9F792C8A907B75858B6739FEC3670600DF6771C4197C267D120000000049454E
+                44AE426082}
+              FileName = 
+                'C:\Users\User\Desktop\iago\Projetos Delphi\AnimationMenuUi\src\i' +
+                'mages\icon_User_b.png'
+            end>
+          Align = Client
+          Margins.Top = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = img_homeClick
+        end
+      end
+      object lay_more: TLayout
+        Tag = 1
+        Align = Center
+        TabOrder = 2
+        object img_more: TImage
+          Tag = 1
+          MultiResBitmap.Height = 64
+          MultiResBitmap.Width = 64
+          MultiResBitmap.LoadSize = 2
+          MultiResBitmap = <
+            item
+              Width = 46
+              Height = 46
+              PNG = {
+                89504E470D0A1A0A0000000D494844520000002E0000002E080600000057B92B
+                37000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                00DA494441546843EDD8B10DC2301005D0EF38D09211D88011800D182123B002
+                93203660848C920D809222310EBE36C448F64996FE2B723E575FB6949C022222
+                A2198DD492D813CCCA01EBB36C2457494DCCC9698FBB50D3CB143C3F06D7C6E0
+                DA185C1B836B2B36B891BAC01EFC677C2BCD3253EDFDA3F5AB0E6EB885CD18E6
+                090C77697E8A09DEF881E921EBFCDC78F4E13BE966459E783D4D79F1039381BF
+                1D33DD520FE74FFD2FF602BC7B69B4556D186BEBAB6C24C7B78A3606D7C6E0DA
+                185C1B836BCB147C9AF2BEF5156A51EC09D894F8FF908888680EF001F0541CA9
+                C693F6B40000000049454E44AE426082}
+              FileName = 
+                'C:\Users\User\Desktop\iago\Projetos Delphi\AnimationMenuUi\src\i' +
+                'mages\icon_more_b.png'
+            end>
+          Align = Client
+          Margins.Top = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          OnClick = img_homeClick
+        end
+      end
+    end
+  end
+  object cir_gray: TCircle
+    Anchors = [akBottom]
+    Fill.Color = xFFE5E0DD
+    HitTest = False
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 74.601623535156250000
+    Position.Y = 422.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    object cir_white: TCircle
+      Align = Client
+      Fill.Color = claWhite
+      Locked = True
+      HitTest = False
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Size.Width = 54.000000000000000000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      object img_click: TImage
+        MultiResBitmap.Height = 32
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <>
+        Align = Client
+        Locked = True
+        HitTest = False
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object animaCircle: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Position.X'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end
