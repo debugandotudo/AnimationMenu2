@@ -14,16 +14,19 @@ type
     cir_gray: TCircle;
     img_home: TImage;
     animaCircle: TFloatAnimation;
-    img_click: TImage;
+    img_more_g: TImage;
     lay_home: TLayout;
     lay_user: TLayout;
     img_user: TImage;
     lay_more: TLayout;
     img_more: TImage;
     lay: TLayout;
+    img_home_g: TImage;
+    img_user_g: TImage;
     procedure img_homeClick(Sender: TObject);
   private
     procedure MoveCircle(obj: Tobject;lay : Tlayout);
+    procedure AnimaImg(tag : Integer);
     { Private declarations }
   public
     { Public declarations }
@@ -50,18 +53,48 @@ begin
 
   animaCircle.StartValue := cir_gray.Position.X;
   if TImage(obj).Tag = 0 then
-    animaCircle.StopValue  := TLayout(lay).Position.X + 5;
+    animaCircle.StopValue  := TLayout(lay).Position.X;
   if TImage(obj).Tag = 1 then
-    animaCircle.StopValue  := TLayout(lay).Position.X - 10 ;
+    animaCircle.StopValue  := TLayout(lay).Position.X - 10;
   if TImage(obj).Tag = 2 then
-    animaCircle.StopValue  := TLayout(lay).Position.X - 25;
-
-
+    animaCircle.StopValue  := TLayout(lay).Position.X - 20;
 
   animaCircle.Start;
+  AnimaImg(TImage(obj).Tag);
+
+
+end;
+procedure TForm1.AnimaImg(tag : Integer);
+
+begin
+
+  img_home_g.Visible := False;
+  img_more_g.Visible := False;
+  img_user_g.Visible := False;
+
+  if Tag = 0 then begin
+    img_home_g.Opacity := 0;
+    img_home_g.Visible := True;
+    img_home_g.AnimateFloat('Opacity',1,0.4,TAnimationType.&In,TInterpolationType.Circular);
+  end;
+
+  if Tag = 1 then begin
+    img_more_g.Opacity := 0;
+    img_more_g.Visible := True;
+    img_more_g.AnimateFloat('Opacity',1,0.4,TAnimationType.&In,TInterpolationType.Circular);
+  end;
+
+  if Tag = 2 then begin
+    img_user_g.Opacity := 0;
+    img_user_g.Visible := True;
+    img_user_g.AnimateFloat('Opacity',1,0.4,TAnimationType.&In,TInterpolationType.Circular);
+  end;
+
+
 
 
 
 end;
+
 
 end.
